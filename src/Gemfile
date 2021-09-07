@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'rainbow'
+gem "tty-box"
+gem "tty-spinner"
+gem "tty-reader"

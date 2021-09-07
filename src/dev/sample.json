@@ -1,0 +1,15 @@
+{
+  "Language API": [
+    "Diabolic"
+  ],
+  "Info" : {
+    "Difficulty" : "Difficult",
+    "Description" : ["You are a wandering adventurer who seeks fame and glory... You have followed rumours that the dead have began rising near the town of New Tristam.",
+
+      "Will you rise to the challenge or join the legions of the dead?"]
+  },
+  "Stages": [
+    {"1" : "f"},
+    {"2": "b"}
+  ]
+}
