@@ -3,10 +3,15 @@ require 'net/http'
 require 'openssl'
 require 'json'
 require 'cgi'
+require 'tty-spinner'
 
 def translate(end_language, string)
-  url = URI("https://deep-translate1.p.rapidapi.com/language/translate/v2")
+  spinner = TTY::Spinner.new("[:spinner] Connecting to database . . .", format: :arrow_pulse)
+  spinner.auto_spin
+  sleep(0.3)
+  spinner.success("(successful)")
 
+  url = URI("https://deep-translate1.p.rapidapi.com/language/translate/v2")
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE

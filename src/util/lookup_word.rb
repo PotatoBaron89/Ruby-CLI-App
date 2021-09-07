@@ -6,6 +6,7 @@ require 'json'
 require 'tty-reader'
 require "tty-prompt"
 
+
 def lookup_word(word)
   url = URI("https://wordsapiv1.p.rapidapi.com/words/#{word}/definitions")
   http = Net::HTTP.new(url.host, url.port)
